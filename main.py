@@ -6,13 +6,14 @@ def calc(znak, a, b):
     elif (znak == '*'):
         return a * b
     elif (znak == '/'):
-        if (znak == '/'):
-             choice = input("Вам нужно целочисленное деление? (напишите + или -)" )
-             if (choice == '+'):
-                 return a // b
-             else:
-                 return a / b
-    return "ОШИБКА"
+        choice = input("Вам нужно целочисленное деление? (напишите + или -)" )
+        if (b == 0):
+            return "Ошибка на 0 делить нельзя!"
+        if (choice == '+'):
+             return a // b
+        else:
+             return a / b
+    return "ОШИБКА вы ввели не знак"
 
 znak = input("Введите знак -> ")
 a = int(input("Введите первое число = "))
