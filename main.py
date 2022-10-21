@@ -1,6 +1,8 @@
 def calc(znak, a, b):
     if (znak == '+'):
         return a + b
+    elif (znak == '-'):
+        return a - b
     return "ОШИБКА"
 
 znak = input("Введите знак -> ")
